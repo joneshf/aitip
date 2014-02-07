@@ -38,4 +38,4 @@ bfs(Arc, [[Node|Path]|MoreOPEN], CLOSED, GoalPred, Sol) :-
 		NewPaths),
 	% Place the new paths on the end of the queue.
 	append(MoreOPEN, NewPaths, NewOPEN),
-	bfs(Arc, NewOPEN, [Node|CLOSED], GoalPred, Sol).q
+	bfs(Arc, NewOPEN, [Node|CLOSED], GoalPred, Sol).
